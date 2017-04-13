@@ -21,6 +21,10 @@
         .fa-btn {
             margin-right: 6px;
         }
+        .vertical {
+            display: flex;
+            align-items: center;
+        }
     </style>
 </head>
 <body id="app-layout">
@@ -56,16 +60,14 @@
                                 <th>&nbsp;</th>
                             </thead>
                             <tbody>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <div class="col-3">
+                                                                    <tr class="row vertical">
+                                                                        <td class="col-3">
                                                                                 <img class="img-circle img-responsive" src="no-photo.png"/>
-                                                                            </div>
                                                                         </td>
-                                        <td class="table-text"><div>Acheter du sopalin</div></td>
+                                        <td class="table-text col-6"><div>Acheter du sopalin</div></td>
 
                                         <!-- Task Delete Button -->
-                                        <td>
+                                        <td class="col-3">
                                             <form action="http://casisbelli-03.insa-rouen.fr/fermefilr/z/fork/quickstart-basic/public/index.php/task/58" method="POST">
                                                 <input type="hidden" name="_token" value="jWK42Y352AeYczq08BtsuNrjm60al14uAasGzgHt">
                                                 <input type="hidden" name="_method" value="DELETE">
